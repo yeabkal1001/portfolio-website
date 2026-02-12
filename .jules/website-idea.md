@@ -1,48 +1,54 @@
 Role & Goal:
-Act as a world-class Frontend Engineer and Awwwards-winning UI/UX Designer. Build a personal portfolio website for a [Insert Your Role, e.g., Creative Developer / Product Designer] that aims to win "Site of the Day." The goal is a perfect balance of brutalist modern aesthetics, high-performance interactivity, and deep storytelling.
+You are an Awwwards-winning Creative Technologist and Senior Frontend Engineer. Build a high-performance personal portfolio for Yeabsira Kayel, a Frontend Developer & UI/UX Designer based in Addis Ababa, Ethiopia.
 
-Design Language & Vibe:
+The goal is to build a site that bridges the gap between design concepts and engineering reality. The vibe is "Experimental Sleek"—combining clean, modern UI with raw, artistic code.
 
-Layout: Use a responsive Bento Grid layout (modular, uneven grid cells) that feels organic but structured.
+Design System & Visuals:
 
-Aesthetics: "Clean Brutalism." Use a monochrome base (deep charcoal #0a0a0a and off-white #f4f4f5) with a single, electric accent color (e.g., Neon Lime or Hyper Blue). High contrast.
+Theme: Deep Dark Mode. Background should be a rich, matte black (#050505) or deep charcoal (#0a0a0a), not just plain black.
 
-Typography: Mix oversized, kinetic typography (sans-serif, wide tracking) for headers with a clean monospace font for metadata/labels.
+Accent: Neon Green (approx #ccff00 or #39ff14). Use this sparingly for buttons, cursors, and active states to create maximum contrast.
 
-Motion: Implement smooth scrolling (Lenis) and scroll-triggered animations. Elements should fade in, scale, or reveal with a staggered delay as the user scrolls.
+Typography: A clash of styles. Use a massive, wide sans-serif (like 'Inter Tight' or 'Manrope') for headlines, and a technical monospace font (like 'JetBrains Mono') for metadata, location, and tags.
 
-Core Features & Tech Stack:
+Avatar: Integrate a Pixel Art Avatar of Yeabsira in the Hero section. Give it a subtle "glitch" or "scanline" shader effect on hover to mix the retro pixel style with the modern sleek vibe.
 
-Stack: React, Tailwind CSS, Framer Motion (for complex animations), and Lucide React (for icons).
+Layout & Architecture (The Bento Grid):
+Instead of a standard list, use a dynamic, responsive Bento Grid layout.
 
-Hero Section: A full-screen interactive playground. Do not use a static image. Create a WebGL-style mouse-follower effect or a kinetic text loop that reacts to cursor velocity.
+Hero Cell: Large text: "Yeabsira Kayel. Frontend Developer & UI/UX Designer." Subtext: "Turning design concepts into interactive realities."
 
-Projects Section: Display work in large, tilt-effect cards. On hover, the card should expand slightly, play a video preview, and dim the surrounding background (focus mode).
+Location/Status Cell: A map snippet of Addis Ababa with a live time clock. Next to it, a pulsing green indicator light with the text "Available for Freelance."
 
-Navigation: A floating, glass-morphism dock at the bottom center of the screen (macOS style) rather than a top navbar.
+Tech Stack Cell: An infinite scrolling marquee showcasing: React, Next.js, TypeScript, Figma, Framer, GSAP, Blender, Spline.
 
-Micro-interactions:
+Project Showcase (Interactive Cards):
+Create specific grid cells for these projects. On hover, the cards should scale slightly and play a video loop or show a WebGL distortion effect.
 
-Magnetic Buttons: Buttons should slightly gravitate toward the mouse cursor before clicking.
+Digital Addis: Label as "Tech Agency."
 
-Custom Cursor: A small circular cursor that blends (mix-blend-mode: difference) with the background and expands when hovering over clickable elements.
+USP Holding: Label as "Corporate/Enterprise."
 
-Content Structure:
+Skin Club: Label as "eCommerce/Beauty."
 
-Hero: Name, Role, One-line value prop.
+Portfolio: A meta-link to this current site logic.
 
-About: A "scrollytelling" section where text highlights as it enters the viewport.
+Motion & Interaction (The X-Factor):
 
-Selected Work: 4-5 key projects with "Case Study" buttons.
+Stack: Next.js (App Router), Tailwind CSS, Framer Motion (for layout transitions), and GSAP (for timeline animations).
 
-The "Stack": A marquee (infinite scroll) of tech logos.
+Scroll: Implement Lenis Scroll for momentum-based, buttery smooth scrolling.
 
-Footer: Massive typography for "LET'S TALK" with a magnetic email copy button.
+3D Integration: Since I use Blender/Spline, include a subtle 3D element (like a floating geometric primitive or wireframe spline) in the background that rotates based on scroll position.
+
+Navigation: A floating "Dock" at the bottom center of the screen (macOS style) with glass-morphism blur.
+
+Cursor: A custom ring cursor that snaps to interactive elements and turns Neon Green on hover.
 
 Technical Constraints:
 
-Mobile-first responsiveness.
+Ensure the layout is mobile-responsive (stack the bento grid on mobile).
 
-Ensure 100/100 Lighthouse performance score (optimize images, lazy load components).
+Use semantic HTML5.
 
-Code must be modular and clean.
+Code must be component-based and clean.
